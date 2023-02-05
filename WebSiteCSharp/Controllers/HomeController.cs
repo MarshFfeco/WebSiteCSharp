@@ -8,16 +8,6 @@ namespace WebSiteCSharp.Controllers
     {
         public IActionResult Index()
         {
-            HomeModel hm = new HomeModel();
-
-            hm.Nome = "Anderson Borba";
-            hm.Email = "anderson22khg@gmail.com";
-
-            return View(hm);
-        }
-
-        public IActionResult Privacy()
-        {
             return View();
         }
 

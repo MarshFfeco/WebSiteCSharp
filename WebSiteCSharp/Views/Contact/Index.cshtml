@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Contacts List";
+}
+
+<div class="text-center">
+       <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-5">
+           <a class="btn btn-success" role="button" asp-controller="Contact" asp-action="Create">new Contact</a>
+       </div>
+
+    <h1 class="display-4 mb-5">Contact List</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Mark@email.com</td>
+                <td>00 12345-6789</td>
+                <td>
+                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <a type="button" class="btn btn-secondary" asp-controller="Contact" asp-action="Update">Edit</a>
+                        <a type="button" class="btn btn-danger" asp-controller="Contact" asp-action="Remove">Delete</a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Jacob@email.com</td>
+                <td>11 9876-54321</td>
+                    <td>
+                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <a type="button" class="btn btn-secondary" asp-controller="Contact" asp-action="Update">Edit</a>
+                        <a type="button" class="btn btn-danger" asp-controller="Contact" asp-action="Remove">Delete</a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry the Bird</td>
+                <td >Larry@bird.com</td>
+                <td>22 1234-654987</td>
+                <td>
+                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <a type="button" class="btn btn-secondary" asp-controller="Contact" asp-action="Update">Edit</a>
+                        <a type="button" class="btn btn-danger" asp-controller="Contact" asp-action="Remove">Delete</a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

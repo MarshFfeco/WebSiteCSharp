@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Contacts Create";
+}
+
+<div class="text-center">
+      <h1>You are creating new contact</h1>
+</div>
+
+<form>
+    <div class="form-group p-2">
+        <label for="Name">Name</label>
+        <input type="text" class="form-control" placeholder="Enter Name">
+    </div>
+
+    <div class="form-group p-2">
+        <label for="Email">Email</label>
+        <input type="email" class="form-control" placeholder="Enter Email">
+    </div>
+
+    <div class="form-group p-2">
+        <label for="Phone">Phone</label>
+        <input type="number" class="form-control" placeholder="Enter Phone">
+    </div>
+
+    <div class="form-group p-2">
+        <button type="submit" style="width: 100%;" class="btn btn-primary btn-lg btn-block mb-2">Create</button>
+        <a style="width: 100%;" class="btn btn-outline-dark btn-lg btn-block" asp-controller="Contact" asp-action="Index" role="button">back</a>
+    </div>
+    
+
+</form>
