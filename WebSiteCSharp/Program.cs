@@ -1,9 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using WebSiteCSharp.Date;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+builder.Services.AddDbContext<DataBaseContext>
+    (options => options.UseMySql(
+        "server=localhost;initial catalog=WSC_BD;uid=root;pwd=",
+        Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.3-mysql")
+        )); 
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
